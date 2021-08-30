@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ObjectCalisthenics._07_KeepAllEntitiesSmall
+﻿namespace ObjectCalisthenics._07_KeepAllEntitiesSmall
 {
     class KeepAllEntitiesSmall
     {
+        /*
+         * Original rule fines
+         * No class over 50 lines of code
+         * No package over 10 files
+         *
+         */
     }
 }

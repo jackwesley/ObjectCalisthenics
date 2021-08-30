@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ObjectCalisthenics._09_NoGettersSettersProperties
 {
-    class NoGettersSettersProperties
+    public class NoGettersSettersProperties
     {
     }
 }

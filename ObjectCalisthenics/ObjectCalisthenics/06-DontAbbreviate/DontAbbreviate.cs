@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ObjectCalisthenics._06_DontAbbreviate
+﻿namespace ObjectCalisthenics._06_DontAbbreviate
 {
-    class DontAbbreviate
+    public class DontAbbreviate
     {
+        public string DontAbbreviateId;
+        public int rpm; //Rotation per minute
+        public string n; // Name
+        public string cat; //Category
     }
 }
