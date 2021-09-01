@@ -12,7 +12,6 @@ namespace ObjectCalisthenics._04_FirstClassCollections
             public Client Create(string name)
             {
                 //Logic
-
                 var client = new Client();
                 _clients.Add(Guid.NewGuid(), client);
                 return client;

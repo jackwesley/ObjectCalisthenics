@@ -1,25 +1,64 @@
-﻿namespace ObjectCalisthenics._02_DontUseTheELSEKeyword
+﻿using System;
+
+namespace ObjectCalisthenics._02_DontUseTheELSEKeyword
 {
     class DontUseTheELSEKeyword
     {
-        public bool CheckPermittedAge(int age)
+        public bool ValidateEmail(string email)
         {
-            bool permission = false;
-            if (age > 18)
-                permission = true;
+            if (!isValid(email))
+            {
+                if (!isEmailRegistered(email))
+                {
+                    if (!isVip(email))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
             else
-                permission = false;
+            {
+                return false;
+            }
 
-            return permission;
+        }
+
+        private bool isVip(string email)
+        {
+            throw new NotImplementedException();
+        }
+
+        private bool isEmailRegistered(string email)
+        {
+            throw new NotImplementedException();
+        }
+
+        private bool isValid(string email)
+        {
+            throw new NotImplementedException();
         }
 
         //Refactoring
-        public bool CheckPermittedAgeRefactored(int age)
+        public bool ValidateEmail2(string email)
         {
-            if (age > 18)
-                return true;
+            if (!isValid(email))
+                return false;
 
-            return false;
+            if (!isEmailRegistered(email))
+                return false;
+
+            if (!isVip(email))
+                return false;
+                        
+            return true;
         }
     }
 }
